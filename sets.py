@@ -12,7 +12,7 @@
 
 # s5=set()
 # s6={}
-# print(type(s5))---its a dictionary empty
-# print(type(s6))---its a empty set
+# print(type(s5)) ---empty set
+# print(type(s6)) ---empty dict
 
 
