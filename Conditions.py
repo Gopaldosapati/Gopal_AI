@@ -52,7 +52,7 @@
 # else:
 #     print("its not available")
 
-# multiple conditions ill decrease the performance, it overcome use MATCH.
+# multiple conditions will decrease the performance, it overcome use MATCH.
 
 #Ex:match case
 # day=4
