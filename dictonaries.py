@@ -1,4 +1,4 @@
-# Keuys are immutable and values are mutable
+# Keys are immutable and values are mutable
 # represented in {}
 #before 3.7 version its unordered, now its ordered
 #supports hashable and searching is faster
@@ -61,18 +61,18 @@
 #         "Pin":520112
 #     }
 # }
-# print(outer["address"]["location"],outer["address"]["city"],outer["addresss"]["Pin"])
+# print(outer["address"]["location"],outer["address"]["City"],outer.get("address",{}).get("Pin"))
 
 #ex:
 # d1={}
 # d1["key1"]=100
 # d1["key2"]=200
-# print(d1)
+# # print(d1)
 
-# d1["key1"]=500
-# print(d1)
+# # d1["key1"]=500
+# # print(d1)
 
-# print(d1["key1"])
+# #print(d1["key1"])
 # #print(d1("key4"))
 # d1.pop("key1")
 # print(d1)
@@ -102,6 +102,7 @@
 #     "key":[10,20]
 # }
 # C=copy.deepcopy(d) #shallow copy
+# print(C)
 # d["key"].append(30)
 # print(d)
 # print(C)  # wont change
@@ -128,14 +129,14 @@
 # d2[1.0]=1000
 # print(d2)
 
-#ex:
-# d3={
-#     "key1":100,
-#     "key2":200
-# }
-# print("key1" in d3)
-# print("key2" in d3)
-# print("key3" in d3)
+#ex: condition check using in and return True or False
+d3={
+    "key1":100,
+    "key2":200
+}
+print("key1" in d3)
+print("key2" in d3)
+print("key3" in d3)
 
 #ex:
 
