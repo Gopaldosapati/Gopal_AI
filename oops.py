@@ -1,4 +1,4 @@
-# collection of variablees(properties) and functions(behaviour) called as class
+# collection of variables(properties) and functions(behaviour) called as class
 # "class" is a keyword used to declre the classes
 # "pass" is the key word used to declare empty class
 # sharing same copy to multiple objects called as "instance members"
@@ -49,7 +49,7 @@
 # print(res2)
 
 
-#ex : initialize parameters during obj creation
+#ex : initialize parameters during obj creation using __init__
 
 # class Test:
 #     def __init__(self,x,y):
