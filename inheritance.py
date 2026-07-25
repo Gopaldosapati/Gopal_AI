@@ -108,4 +108,74 @@
 # obj=child()
 # obj.wish()
 
-#Ex:
+#Ex:Protected variables available only to child class
+# _ is used to represent protected variable
+#unable to access from other classes
+
+# class parent:
+#     def __init__(self):
+#         self.x=100
+# class child(parent):
+#     pass
+# obj=child()
+
+#Overiding: means overide parent class function overide with  child class functionality
+#overiding comes under polimorphism
+# class parent:
+#     def db_fun(self):
+#         return "mysql"
+# class child(parent):
+#     def db_fun(self):
+#         return "mongodb"
+# obj=child()
+# print(obj.db_fun())
+
+
+#ex: Overloading is not supported by python
+#same function with multiple parameters called as overloading
+# class test:
+#     def add(self,num1,num2):
+#         res=num+num2
+#         print(res)
+#     def add(self,num1,num2,num3):
+#         res=num1+num2+num3
+#         print(res)
+# obj=test()
+
+# obj.add(100,200,300)
+
+#
+# class test:
+#     def add(self,*num):   #num acts like tuple
+#         print(sum(num))   #overloading
+# obj=test()
+# obj.add(10,20)
+# obj.add(10,20,30)
+
+#ex:
+# class test:
+#     college="CBIT !!!"
+#     def __init__(self):
+#         self.college="KLU  !!!"
+# print(test.college)
+# obj=test()
+# print(obj.college)
+
+#ex:how to modify class level variable
+# class test:
+#     name="hello"
+# test.name="genAI"
+# print(test.name)
+
+#ex: Abstarct method : 
+
+# from abc import ABC,abstractmethod
+# class test(ABC):
+#     @abstractmethod    
+#     def my_fun(self):
+#         pass
+# class test1(test):
+#     def my_fun(self):
+#         print("Hello")
+# obj=test1()
+# obj.my_fun()
