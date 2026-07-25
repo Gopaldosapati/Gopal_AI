@@ -77,3 +77,45 @@
 
 #ex:
 
+# class test:
+#     cmp="TCS"  #class level variable
+# print(test.cmp)
+
+#EX
+# class test:
+#     cmp="TCS"
+
+#     def __init__(self):
+#         self.cmp="Infosis"  #instance variable
+# obj1=test()
+# print(obj1.cmp)
+# print(test.cmp)
+
+#ex:
+# class test:
+#     cmp="TCS"
+
+# test.cmp="Infosys"
+# obj=test()
+# print(obj.cmp)
+
+#ex:
+# class test:
+#     cmp="TCS"
+#     def hello(cls):
+#         cls.cmp="Infosys"
+
+# test.hello(test)
+# print(test.cmp)
+
+#ex:
+# class test:
+#     cmp="TCS"
+
+#     def hello(cls,new_cmp):
+#         cls.cmp=new_cmp
+# test.hello(test,"infosys")
+# print(test.cmp)
+
+#Ex: Protected
+
