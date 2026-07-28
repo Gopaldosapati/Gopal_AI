@@ -76,12 +76,60 @@ import numpy as np
 #     print("-------------------------------------")
 
 #ex:
-import numpy as np
-a=np.array([1,2])
-b=np.array([3,4])
-c=a+b
-print(c)
-d=a-b
-print(d)
-e=a*b
-print(e)
+# import numpy as np
+# a=np.array([1,2])
+# b=np.array([3,4])
+# c=a+b
+# print(c)
+# d=a-b
+# print(d)
+# e=a*b
+# print(e)
+
+
+#------------------------2026-07-28----------------------
+
+#ex:
+# import numpy as np
+# a=np.array([10,20,30])
+# num=2
+# print(a+num)  #add +2 to each element in the array 
+
+# b=np.array([[10,20,30],
+#             [40,50,60]])
+# x=10
+# print(b+x)
+
+#ex: convert 1D array to 2D array
+# import numpy as np
+# a=np.array([1,2,3,4,5,6])
+# print(a.reshape(2,3))
+# b=a.reshape(2,3)  # flatten used to convert to 1D
+# print(b.flatten())
+
+#ex: inverse function
+
+# import numpy as np
+# a=np.array([[10,20],
+#             [30,40]])
+# print(np.linalg.inv(a))  #matrix inverse
+# print(np.linalg.det(a))   #determinent
+# print(np.linalg.matrix_transpose(a))
+
+
+#ex:
+# import numpy as np
+# a=np.array([60,68,80,78,69,90])
+# print(f"avg marks : {np.mean(a)}")
+# print(f"avg marks : {np.max(a)}")
+
+#Ex:
+# import numpy as np
+# sales=np.array([[200,300,250],
+#                 [400,500,450]])
+# print(np.sum(sales,axis=1))  #row wise cal
+# print(np.sum(sales,axis=0)) #column wise cal
+
+
+#ex:
+
