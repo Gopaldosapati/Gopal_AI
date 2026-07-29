@@ -30,7 +30,7 @@
 # res=pd.Series(data,index=["std1","std2","std3","std4","std5"])
 # print(res["std3"])
 
-#ex: deal with more lists
+#ex: deal with more lists--to convert lists into tablular form we need to use dataFrame function
 # import pandas as pd
 # Employees={
 #     "emp1":[101,102,103,104],
