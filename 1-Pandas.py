@@ -142,10 +142,64 @@ import pandas as pd
 # print(df)
 
 #Ex:
+# import pandas as pd
+# df=pd.read_csv("employees_null.csv")
+# #print(df)
+# # print(df.isnull())
+# #print(df.isnull().sum())
+# #print(df.fillna({"Age": 0}))  # replace null with 0 in Age column
+# print(df["Salary"].fillna(df["Salary"].mean(),inplace=True))
+
+
+#--------------------------31/07---------------------
+
+#Ex:
 import pandas as pd
-df=pd.read_csv("employees_null.csv")
-#print(df)
-# print(df.isnull())
-#print(df.isnull().sum())
-#print(df.fillna({"Age": 0}))  # replace null with 0 in Age column
-print(df["Salary"].fillna(df["Salary"].mean(),inplace=True))
+df1 = pd.DataFrame({
+
+    "EmpID":[101,102,103,104],
+
+    "Name":["Sam","John","David","Priya"],
+
+    "Salary":[50000,60000,70000,80000]
+
+})
+
+df2 = pd.DataFrame({
+
+    "EmpID":[101,102,103,105],
+
+    "Name":["Sam","John","David","Anjali"],
+
+    "Salary":[50000,65000,70000,90000]
+
+})
+
+# print(df1. equals(df2))
+# print(df1.compare(df2))
+# print(df1.merge(df2,how="left",indicator=True))
+
+#Ex: outer
+# res=df1.merge(df2,on="EmpID",how="outer",suffixes=("old","new"))
+# print(res)
+
+data = {
+
+    "Employee": ["Sam", "John", "Sam", "David", "John", "David"],
+
+    "Department": ["IT", "HR", "IT", "HR", "IT", "IT"],
+
+    "Salary": [50000, 60000, 55000, 45000, 65000, 70000]
+
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+values=df.pivot_table(
+    values="Salary",
+    index="Employee",
+    columns="Department"
+
+)
+print(values)
