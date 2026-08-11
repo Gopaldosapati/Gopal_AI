@@ -1,0 +1,3 @@
+fastapi  #is the library
+uvicorn  #is a light weight server to execute
+pymongo   # to connect to mongodb 
