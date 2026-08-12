@@ -1,5 +1,6 @@
 from fastapi import FastAPI
-from pymongo import MongoClient
+from pymongo import MongoClient,HTTPException
+import bcrypt
 
 #to send get,post,put and delete requests
 app=FastAPI()
@@ -12,6 +13,9 @@ db=client["cmp_db"]
 
 #table creation
 employees=db["employees"]
+
+SECRETE_KEY="my-VPro-"
+
 
 @app.post("/employees")
 def create_emp(name:str,dept:str,salary:float):
@@ -47,3 +51,18 @@ def read_emp(name:str):
             return emp
 
         return {"msg":"employee not found !!!"}
+
+
+@app.put("/employees/{name}/{new_name}/{updated_salary}")
+def update_employees(name:str,new_name:str,updated_salary:float):
+      res=employees.update_one({"name":name},{"$set":{"name":new_name,"salary":updated_salary}})
+      return {
+            "message":"record updated successfully",
+            "modified_count":res.modified_count
+      }
+
+@app.delete("/employees/{name}")
+def delete_employee(name:str):
+      res=employees.delete_one({"name":name})
+      return{"message":"record deleted successfully",
+                  "deleted_count":res.deleted_count}

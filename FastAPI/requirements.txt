@@ -1,3 +1,5 @@
 fastapi  #is the library
 uvicorn  #is a light weight server to execute
 pymongo   # to connect to mongodb 
+bcrypt     #used to encrypt passwords
+pyJwt       #used to generate token for authentication(json web token)
