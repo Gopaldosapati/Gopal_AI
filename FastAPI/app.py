@@ -8,10 +8,10 @@
 #uvicorn  #is a light weight server to execute
 
 # from fastapi import FastAPI  #FastAPI is a readymade class
-# app=FastAPI()   #need to create an object for that API
+# app=FastAPI()   #need to create an object to call FastAPI class
 # #create a get request
 
-# @app.get("/gop") #"/" #is a empty end point
+# @app.get("/gop") # "/" is a empty end point
 # def home():
 #     return {"msg":"welcome to FastAPI !!!"}
 
