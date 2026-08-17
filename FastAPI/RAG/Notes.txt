@@ -1,0 +1,21 @@
+LLM-- Large language modeles
+LLMs trained with huge volume of data
+LLMs able to answer your qestions,give code,images,videos,documents etc
+
+EX: OpenAI,Gemini,deepseek,meta,purplexcity,anthropic etc
+
+LLMs able to understand vectors and to generate vectors there are somany readymade models.
+    https://HUggingface.co/join    contains all the vectors
+
+
+RAG --Retrival augumented generation (used to supply additional info to LLMs)
+ 8types of RAGs
+  1)naive-RAG
+  2)advanced -RAG
+  3)hybrid-RAG
+  4)graphical-RAG
+  5)self-RAG
+  6)corrective-RAG
+  7)Agentic-RAG
+  8)Modular-RAG
+
