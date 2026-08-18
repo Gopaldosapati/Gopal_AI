@@ -3,7 +3,7 @@
 # File - save the uploaded files
 from fastapi import FastAPI, UploadFile, File
 # CORSMiddleware - connect to frontend (Ex. React,Angular,VueJS,....)
-from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.cors import CORSMiddleware  
 # PdfReader - read content from pdf file
 from pypdf import PdfReader
 # SentenceTransformer - create embeddings
